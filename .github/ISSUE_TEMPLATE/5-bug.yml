@@ -1,0 +1,67 @@
+name: Bug
+description: Um bug na aplicação.
+title: "[BUG] - {Descrição breve do bug}"
+labels: []
+assignees: []
+type: Bug
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Preencha as informações abaixo para reportar um bug.
+
+  - type: input
+    id: descricao_bug
+    attributes:
+      label: Descrição do Bug
+      description: Uma descrição clara e concisa do que é o bug.
+      placeholder: Descreva o bug aqui...
+    validations:
+      required: true
+
+
+  - type: textarea
+    id: passos_reproduzir
+    attributes:
+      label: Passos para Reproduzir
+      description: Etapas detalhadas para reproduzir o comportamento.
+      placeholder: |
+        1. Vá para '...'
+        2. Clique em '....'
+        3. Role para baixo até '....'
+        4. Veja o erro
+    validations:
+      required: true
+
+  - type: textarea
+    id: comportamento_esperado
+    attributes:
+      label: Comportamento Esperado
+      description: Descrição clara e concisa do que deveria ocorrer.
+      placeholder: Descreva o comportamento esperado...
+    validations:
+      required: true
+
+  - type: textarea
+    id: capturas_tela
+    attributes:
+      label: Capturas de Tela
+      description: Se aplicável, adicione capturas de tela para ajudar a explicar o problema.
+    validations:
+      required: true
+
+
+  - type: textarea
+    id: logs_erros
+    attributes:
+      label: Logs e Mensagens de Erro
+      description: Cole logs ou mensagens de erro relevantes para ajudar na análise do problema.
+      placeholder: Logs e mensagens de erro
+
+  - type: textarea
+    id: contexto_adicional
+    attributes:
+      label: Contexto Adicional
+      description: Adicione qualquer outro contexto relevante sobre o problema, como mudanças recentes no código ou atualizações realizadas.
+      placeholder: Contexto Adicional
